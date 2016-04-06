@@ -17,7 +17,7 @@ class StoryFeed
 
         $handler = new CacheHandler($cacheProvider, null, [
             'methods' => ['GET', 'HEAD', 'OPTIONS'],
-            'expire' => 300,
+            'expire' => 28800,
             'filter' => null,
         ]);
 
