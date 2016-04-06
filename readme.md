@@ -1,6 +1,6 @@
 ## Server Requirements
 
-- PHP >= 5.5.9
+- PHP >= 5.5.9 (**PHP 7 Recommended**)
 - OpenSSL PHP Extension
 - PDO PHP Extension
 - Mbstring PHP Extension
@@ -8,8 +8,9 @@
 
 ## Download & Install a Webserver
 
-- XAMPP - https://www.apachefriends.org/xampp-files/7.0.4/xampp-win32-7.0.4-0-VC14-installer.exe
-- WAMP - http://sourceforge.net/projects/wampserver/files/WampServer%203/WampServer%203.0.0/wampserver3_x64_apache2.4.17_mysql5.7.9_php5.6.16_php7.0.0.exe/download
+- XAMPP: https://www.apachefriends.org/xampp-files/7.0.4/xampp-win32-7.0.4-0-VC14-installer.exe
+- WAMP: http://sourceforge.net/projects/wampserver/files/WampServer%203/WampServer%203.0.0/wampserver3_x64_apache2.4.17_mysql5.7.9_php5.6.16_php7.0.0.exe/download
+- Microsoft Web Platform Installer: https://www.microsoft.com/web/downloads/platform.aspx
 
 ## Install
 
