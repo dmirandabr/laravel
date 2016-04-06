@@ -8,14 +8,20 @@
 
 ## Download & Install a Webserver
 
+- MAMP: https://www.mamp.info/en/downloads/
 - XAMPP: https://www.apachefriends.org/xampp-files/7.0.4/xampp-win32-7.0.4-0-VC14-installer.exe
 - WAMP: http://sourceforge.net/projects/wampserver/files/WampServer%203/WampServer%203.0.0/wampserver3_x64_apache2.4.17_mysql5.7.9_php5.6.16_php7.0.0.exe/download
 - Microsoft Web Platform Installer: https://www.microsoft.com/web/downloads/platform.aspx
 
+## Using MAMP
+
+- Download: https://www.mamp.info/en/downloads/
+- Follow this Video Setup Guide: https://www.youtube.com/watch?v=MNtj0t_AuVM
+
 ## Install
 
-- Install Composer: https://getcomposer.org/download/
-- Clone the repository: https://github.com/brpoc/laravel.git
+- Install Composer https://getcomposer.org/download/
+- Clone the repository https://github.com/brpoc/laravel.git or use a direct download https://github.com/brpoc/laravel/archive/master.zip 
 - Open a console and navigate to the project folder and run: composer install
 - Navigate to http://localhost:port/ProjectPath/public/
 
