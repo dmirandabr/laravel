@@ -16,7 +16,7 @@
 ## Using MAMP
 
 - Download: https://www.mamp.info/en/downloads/
-- Follow this Video Setup Guide: https://www.youtube.com/watch?v=MNtj0t_AuVM
+- Follow this Video Setup Guide: https://www.youtube.com/watch?v=ahaQAB9Hkm8
 
 ## Install
 
