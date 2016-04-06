@@ -15,7 +15,7 @@
 
 ## Using MAMP
 
-- Download: https://www.mamp.info/en/downloads/ or https://www.dropbox.com/s/keo1nvh6xnnaxga/MAMP_MAMP_PRO_3.2.exe?dl=0
+- Download: https://www.mamp.info/en/downloads/ or https://www.dropbox.com/s/keo1nvh6xnnaxga/MAMP_MAMP_PRO_3.2.exe?dl=1
 - Follow this Video Setup Guide: https://www.youtube.com/watch?v=ahaQAB9Hkm8
 
 ## Install
