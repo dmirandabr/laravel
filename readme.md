@@ -20,7 +20,7 @@
 
 ## Install
 
-- Download & Install Composer https://getcomposer.org/download/
+- Download & Install Composer https://getcomposer.org/download/ (If you selected MAMP you have to copy the **php.ini** file from "C:\MAMP\conf\php7.0.0" to "C:\MAMP\bin\php\php7.0.0")
 - Navigate to the webserver document root
 - Clone the repository https://github.com/brpoc/laravel.git or use the direct download https://github.com/brpoc/laravel/archive/master.zip
 - Open a console and run: composer install
