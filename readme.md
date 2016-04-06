@@ -21,9 +21,10 @@
 ## Install
 
 - Install Composer https://getcomposer.org/download/
-- Clone the repository https://github.com/brpoc/laravel.git or use a direct download https://github.com/brpoc/laravel/archive/master.zip 
-- Open a console and navigate to the project folder and run: composer install
-- Navigate to http://localhost:port/ProjectPath/public/
+- Navigate to the Webserver Document Root
+- Clone the repository https://github.com/brpoc/laravel.git or use the direct download https://github.com/brpoc/laravel/archive/master.zip
+- Open a console and run: composer install
+- Go to http://localhost:8888/public/
 
 For more information go to: 
 - Laravel Docs: https://laravel.com/docs
