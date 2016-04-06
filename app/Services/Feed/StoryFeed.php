@@ -52,7 +52,7 @@ class StoryFeed
             $featuredMedia = json_decode($this->getResponse('media/' . $id));
         }
 
-        return $featuredMedia->guid->rendered ?? null;
+        return isset($featuredMedia->guid->rendered) ? $featuredMedia->guid->rendered : null;
     }
 
     public function getPostBySlug($slug)
