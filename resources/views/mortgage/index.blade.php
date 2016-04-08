@@ -8,7 +8,9 @@
             <div class="left">
                 @include('mortgage.partials.search_form')
             </div>
-            <div id="mortgage-rate-tables" class="center"></div>
+            <div id="mortgage-rate-tables" class="center">
+                @include('mortgage.partials.rates')
+            </div>
             <div class="right">
                 @include('mortgage.partials.right')
             </div>

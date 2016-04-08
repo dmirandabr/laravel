@@ -33,6 +33,6 @@
     </div>
 </div> <!-- /container -->
 @include('partials.footer')
-@include('partials.js')
+@include('partials.js-vue')
 </body>
 </html>

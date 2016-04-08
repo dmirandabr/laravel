@@ -2,8 +2,8 @@
     <div class="form-group">
         <label>Location</label>
         <select name="market" class="form-control">
-            <option value="98" selected="">West Palm Beach, FL</option>
-            <option value="4">Los Angeles, CA</option>
+            <option value="98">West Palm Beach, FL</option>
+            <option value="4" selected="">Los Angeles, CA</option>
             <option value="2">New York, NY</option>
         </select>
     </div>
