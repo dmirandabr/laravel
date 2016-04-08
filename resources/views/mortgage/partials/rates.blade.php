@@ -1,7 +1,8 @@
 <span v-for="product in products" v-cloak>
     <div class="rate-row" v-for="result in product.results">
         <div class="col-1">
-            <img src="http://www.brimg.net/@{{ result.img }}" />
+            <img v-if="result.img" v-bind:src="'http://www.brimg.net/' + result.img" />
+            <span v-else>@{{ result.lender }}</span>
             <div class="reviews-stars"></div>
             <a href="@{{ result.url }}">Lender info</a>
             <div class="clearfix"></div>

@@ -5,6 +5,9 @@
         data: {
             products: {}
         },
+        ready: function () {
+            this.retrieveRates();
+        },
         methods: {
             retrieveRates: function() {
                 $.getJSON(BASE_URL + "/mortgage/rates", $('#mortgage-search-form').serialize(), function(data){
@@ -25,8 +28,6 @@
     });
 
     $(document).ready(function() {
-
-        mortgageRateTable.retrieveRates();
 
         $('#search-btn').click(function() {
             mortgageRateTable.retrieveRates();
