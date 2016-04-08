@@ -1,3 +1,7 @@
+# POC - Laravel
+
+[![Build Status](https://travis-ci.org/brpoc/laravel.svg)](https://travis-ci.org/brpoc/laravel)
+
 ## Server Requirements
 
 - PHP >= 5.5.9 (**PHP 7 Recommended**)
