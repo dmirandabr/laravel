@@ -10,7 +10,7 @@
 - Mbstring PHP Extension
 - Tokenizer PHP Extension
 
-## Download & Install a Webserver
+## Download & Install a Webserver (Only one of them)
 
 - MAMP: https://www.mamp.info/en/downloads/
 - XAMPP: https://www.apachefriends.org/xampp-files/7.0.4/xampp-win32-7.0.4-0-VC14-installer.exe
