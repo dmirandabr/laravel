@@ -4,6 +4,7 @@ namespace Poc\Http\Controllers\Mortgage;
 
 use Illuminate\Http\Request;
 use Poc\Http\Controllers\Controller;
+use Poc\Services\Mortgage\RatesFeed;
 
 class MortgageController extends Controller
 {
@@ -13,14 +14,12 @@ class MortgageController extends Controller
         return view('mortgage.index');
     }
 
-    public function rates(Request $request)
+    public function rates(Request $request, RatesFeed $ratesFeed)
     {
-        $client = new \GuzzleHttp\Client(['base_uri' => 'http://www.bankrate.com/']);
+        $response = $ratesFeed->get($request->getQueryString());
 
-        $response = $client->get('ajax/dynamic-content/rate-tables/rt-mortgage-hp-dynamic.aspx?' . $request->getQueryString());
-        $response = json_decode((string)$response->getBody());
-
-        return response()->json($response)
+        return response()
+            ->json(json_decode($response))
             ->setCallback($request->input('callback'));
     }
 
