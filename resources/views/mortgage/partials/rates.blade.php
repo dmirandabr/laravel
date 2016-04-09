@@ -2,7 +2,7 @@
     <div class="rate-row" v-for="result in product">
         <div class="col-1">
             <img v-if="result.logo" v-bind:src="'http://www.brimg.net/system/img/inst/' + result.logo" />
-            <span v-else>@{{ result.advertiser }}</span>
+            <div v-else>@{{ result.advertiser }}</div>
             <span v-show="result.ispaid == 'true'">
                 <div class="reviews-stars"></div>
                 <a href="@{{ result.adrefurl }}">Lender info</a>
