@@ -63,5 +63,5 @@
             <option value="All" data-val="3">All points</option>
         </select>
     </div>
-    <button type="button" class="btn btn-primary" id="search-btn">Update Rates</button>
+    <button type="button" class="btn btn-primary" v-on:click="retrieveRates">Update Rates</button>
 </form>

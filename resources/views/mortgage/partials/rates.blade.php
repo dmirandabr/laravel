@@ -21,8 +21,8 @@
             <div class="payment"><i>@{{ result.estpayment | currencyDisplay }}</i><span>/mo</span></div>
             <div class="date">As of: @{{ result.svydate | formatDate }}</div>
         </div>
-        <div class="col-4">
-            <a href="#" class="next">Next</a>
+        <div class="col-4" v-show="result.ispaid == 'true'">
+            <a href="@{{ result.adrefurl }}" class="next">Next</a>
             <div class="clearfix"></div>
             <div class="phone" v-show="result.phone">@{{ result.phone }}</div>
         </div>
