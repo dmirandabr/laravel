@@ -10,18 +10,41 @@
         },
         methods: {
             retrieveRates: function() {
-                $.getJSON(BASE_URL + "/mortgage/rates", $('#mortgage-search-form').serialize(), function(data){
-                    mortgageRateTable.products = data.response.products;
+                var url = 'http://ps.bankrate.com/mortgage/' +
+                    $('#mortgage-search-form [name="prods"]').val() + '/' +
+                    $('#mortgage-search-form [name="market"] :selected').data('zipcode') + '/' +
+                    $('#mortgage-search-form [name="loan"]').val() + '/' +
+                    (100-$('#mortgage-search-form [name="perc"]').val()*1) + '/' +
+                    $('#mortgage-search-form [name="fico"]').val() + '/' + 
+                    $('#mortgage-search-form [name="points"] :selected').data('val');
+
+                $.ajax({
+                    url: url,
+                    type: 'GET',
+                    dataType: 'json',
+                    beforeSend: function (xhr) {
+                        xhr.setRequestHeader(
+                            'Authorization',
+                            'Basic YnIzOjRjN3RkYnk4aWo3bA=='
+                        )
+                    }
+                }).success(function (data) {
+                    mortgageRateTable.products = data.products;
+                }).error(function () {
+                    alert('An error occurred!');
                 });
             }
         },
         filters: {
             formatDate: function(value) {
-                return moment(value).format('DD/MM');
+                return moment(new Date(value)).format('DD/MM');
             },
             extractProductName: function(value) {
                 var commaPos = value.indexOf(",");
                 return commaPos > 0 ? value.substr(0, commaPos) : value;
+            },
+            currencyDisplay: function(val) {
+                return '$' + (+val).toFixed(0);
             }
         }
 

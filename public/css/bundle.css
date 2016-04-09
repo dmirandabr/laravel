@@ -334,6 +334,19 @@ Home Page Stories
     padding: 0 13px 0 16px;
 }
 
+.rate-row .col-1 a {
+    font-size: 12px;
+    margin-bottom: 3px;
+    display: inline-block;
+}
+
+.rate-row .col-1 span {
+    font-size: 10px;
+    color: #8a8a8a;
+    line-height: 10px;
+    display: inline-block;
+}
+
 .rate-row .col-2 {
     width: 184px;
     padding: 0 5px 0 5px;
